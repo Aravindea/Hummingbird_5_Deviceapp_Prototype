@@ -65,7 +65,7 @@ const HomeDevice5ConnectedReady = () => {
                   <img
                     className={styles.wifiOnIcon}
                     alt=""
-                    src="/wifisvgrepocom-1-11@2x.png"
+                    src="/wifisvgrepocom-1-111@2x.png"
                   />
                   <div className={styles.div1}>100%</div>
                   <img

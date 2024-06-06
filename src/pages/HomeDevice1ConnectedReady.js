@@ -39,7 +39,7 @@ const HomeDevice1ConnectedReady = () => {
                 <img
                   className={styles.image23Icon}
                   alt=""
-                  src="/image-23@2x.png"
+                  src="/image-231@2x.png"
                 />
               </div>
               <div className={styles.div}>1</div>

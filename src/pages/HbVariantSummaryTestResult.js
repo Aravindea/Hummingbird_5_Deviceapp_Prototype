@@ -46,7 +46,7 @@ const HbVariantSummaryTestResult = () => {
             <img
               className={styles.wifiSvgrepoCom11}
               alt=""
-              src="/wifisvgrepocom-1-1.svg"
+              src="/wifisvgrepocom-1-11.svg"
             />
             <img className={styles.mapIcIcon} alt="" src="/map-ic@2x.png" />
           </div>
