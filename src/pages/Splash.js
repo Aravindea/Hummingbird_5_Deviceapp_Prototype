@@ -1,7 +1,10 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "./Splash.module.css";
 
 const Splash = () => {
+  const navigate = useNavigate();
+
   useEffect(() => {
     const scrollAnimElements = document.querySelectorAll(
       "[data-animate-on-scroll]"
@@ -31,6 +34,17 @@ const Splash = () => {
       }
     };
   }, []);
+
+  useEffect(() => {
+    // Navigate to another page after 3 seconds
+    const timer = setTimeout(() => {
+      navigate("/loginuid-pwd"); // Change this to the path you want to navigate to
+    }, 3000);
+
+    // Cleanup the timer
+    return () => clearTimeout(timer);
+  }, [navigate]);
+
   return (
     <div className={styles.splash}>
       <img
