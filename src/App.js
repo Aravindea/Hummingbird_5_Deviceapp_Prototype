@@ -6,6 +6,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import Splash from "./pages/Splash";
+import HomeDevice1SelectTest from "./components/HomeDevice1SelectTest";
 import LoginUIDPWD from "./pages/LoginUIDPWD";
 import Home from "./pages/Home";
 import AddReader1Device from "./pages/AddReader1Device";
@@ -48,6 +49,10 @@ function App() {
 
     switch (pathname) {
       case "/":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/home-device-1-select-test":
         title = "";
         metaDescription = "";
         break;
@@ -166,6 +171,10 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Splash />} />
+      <Route
+        path="/home-device-1-select-test"
+        element={<HomeDevice1SelectTest />}
+      />
       <Route path="/loginuid-pwd" element={<LoginUIDPWD />} />
       <Route path="/frame-1" element={<Home />} />
       <Route path="/add-reader" element={<AddReader1Device />} />

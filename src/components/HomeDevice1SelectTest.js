@@ -1,10 +1,9 @@
 import { useCallback } from "react";
 import { DotLottiePlayer } from "@dotlottie/react-player";
 import { useNavigate } from "react-router-dom";
-import PropTypes from "prop-types";
 import styles from "./HomeDevice1SelectTest.module.css";
 
-const HomeDevice1SelectTest = ({ className = "" }) => {
+const HomeDevice1SelectTest = () => {
   const navigate = useNavigate();
 
   const onSettingsMenuButtonsContainerClick = useCallback(() => {
@@ -20,7 +19,7 @@ const HomeDevice1SelectTest = ({ className = "" }) => {
   }, [navigate]);
 
   return (
-    <div className={[styles.homeDevice1SelectTest, className].join(" ")}>
+    <div className={styles.homeDevice1SelectTest}>
       <div className={styles.homeTitleBar}>
         <div className={styles.homeTitleBar1}>
           <div className={styles.selectTest}>SELECT TEST</div>
@@ -95,10 +94,6 @@ const HomeDevice1SelectTest = ({ className = "" }) => {
       </div>
     </div>
   );
-};
-
-HomeDevice1SelectTest.propTypes = {
-  className: PropTypes.string,
 };
 
 export default HomeDevice1SelectTest;
