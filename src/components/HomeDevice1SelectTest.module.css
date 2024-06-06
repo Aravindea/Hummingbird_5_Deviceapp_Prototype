@@ -260,8 +260,8 @@
   color: var(--color-black);
 }
 .homeDevice1SelectTest {
-  width: 1440px;
-  max-width: 100%;
+  width: 100%;
+  position: relative;
   align-items: flex-start;
   text-align: center;
   font-size: var(--font-size-lg);
