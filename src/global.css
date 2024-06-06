@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kokoro:wght@400&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-work-sans: "Work Sans";
+  --font-kokoro: Kokoro;
+
+  /* font sizes */
+  --font-size-sm: 14px;
+  --font-size-smi: 13px;
+  --font-size-xl: 20px;
+  --font-size-base: 16px;
+  --font-size-lg: 18px;
+  --font-size-xs: 12px;
+  --font-size-3xs: 10px;
+  --font-size-11xl: 30px;
+
+  /* Colors */
+  --color-black: #000;
+  --color-white: #fff;
+  --color-navajowhite: #fcd8a2;
+  --color-gainsboro: #dedede;
+  --color-gray-100: #8a8a8a;
+  --color-gray-200: #878787;
+  --color-gray-300: #181819;
+  --color-gray-400: rgba(0, 0, 0, 0.3);
+  --color-gray-500: rgba(255, 255, 255, 0.5);
+  --color-orange: #f9a11b;
+  --color-whitesmoke: #e9e9e9;
+  --color-dimgray: #6a6a6a;
+  --color-silver-100: #cac8c8;
+  --color-silver-200: #b9b9b9;
+  --color-beige: #cfe2cc;
+  --color-lightblue: #c6e6fd;
+
+  /* Gaps */
+  --gap-71xl: 90px;
+  --gap-3xl: 22px;
+  --gap-5xs: 8px;
+  --gap-4xs: 9px;
+  --gap-7xl: 26px;
+  --gap-11xl: 30px;
+  --gap-3xs: 10px;
+  --gap-21xl: 40px;
+  --gap-361xl: 380px;
+  --gap-29xl: 48px;
+  --gap-8xs: 5px;
+  --gap-6xl: 25px;
+  --gap-88xl: 107px;
+  --gap-89xl: 108px;
+  --gap-xl: 20px;
+  --gap-7xs: 6px;
+  --gap-41xl: 60px;
+  --gap-13xl: 32px;
+
+  /* Paddings */
+  --padding-61xl: 80px;
+  --padding-mini: 15px;
+  --padding-12xs: 1px;
+  --padding-base: 16px;
+  --padding-47xl: 66px;
+  --padding-11xs: 2px;
+  --padding-5xs: 8px;
+  --padding-sm: 14px;
+  --padding-xl: 20px;
+  --padding-3xs: 10px;
+  --padding-131xl: 150px;
+  --padding-xs: 12px;
+  --padding-11xl: 30px;
+  --padding-7xs: 6px;
+  --padding-8xs: 5px;
+  --padding-13xl: 32px;
+  --padding-26xl: 45px;
+  --padding-22xl: 41px;
+  --padding-mid: 17px;
+
+  /* Border radiuses */
+  --br-9xs: 4px;
+  --br-xl: 20px;
+  --br-5xs: 8px;
+}

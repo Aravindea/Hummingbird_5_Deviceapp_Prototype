@@ -1,0 +1,170 @@
+.homeIc {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 24px;
+  position: relative;
+  height: 24px;
+  background-image: url(/public/image4@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.addReader {
+  flex: 1;
+  position: relative;
+  font-weight: 600;
+}
+.settingsSvgrepoCom1Icon {
+  width: 24px;
+  position: relative;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.homeTitleBar,
+.homeTitleBar1 {
+  display: flex;
+  align-items: center;
+}
+.homeTitleBar1 {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 var(--padding-11xl) 0 0;
+  box-sizing: border-box;
+  max-width: 768px;
+}
+.homeTitleBar {
+  align-self: stretch;
+  background-color: var(--color-black);
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-sm) var(--padding-mini);
+}
+.addDevice1,
+.image23Icon {
+  position: relative;
+}
+.image23Icon {
+  width: 131px;
+  height: 116px;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+}
+.gazelleMiniVideo {
+  position: relative;
+  font-weight: 500;
+}
+.frameWrapper,
+.image23Parent {
+  display: flex;
+  justify-content: center;
+}
+.image23Parent {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-3xs);
+}
+.frameWrapper {
+  align-self: stretch;
+  border-radius: var(--br-9xs);
+  background-color: var(--color-dimgray);
+  overflow: hidden;
+  flex-direction: row;
+  align-items: center;
+  padding: var(--padding-3xs);
+  color: var(--color-silver-200);
+}
+.addReader1 {
+  width: 112px;
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.addDevice1Parent,
+.covid19Test {
+  border-radius: var(--br-9xs);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+.covid19Test {
+  width: 158px;
+  background-color: var(--color-orange);
+  height: 50px;
+  flex-shrink: 0;
+  flex-direction: row;
+  justify-content: center;
+  padding: var(--padding-base) var(--padding-3xs);
+  cursor: pointer;
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+}
+.addDevice1Parent {
+  width: 100%;
+  background-color: var(--color-whitesmoke);
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-11xl) var(--padding-3xs);
+  gap: var(--gap-11xl);
+  max-width: 375px;
+}
+.cancel {
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  font-family: var(--font-work-sans);
+  color: var(--color-black);
+  text-align: center;
+}
+.cancelButton {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-xs) var(--padding-xl);
+  background-color: var(--color-navajowhite);
+  width: 100%;
+  border-radius: var(--br-9xs);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  max-width: 140px;
+}
+.cancelButtonWrapper {
+  align-self: stretch;
+  justify-content: flex-start;
+}
+.addReader1Device,
+.bodyScreen,
+.cancelButtonWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bodyScreen {
+  align-self: stretch;
+  background-color: var(--color-white);
+  overflow: hidden;
+  justify-content: flex-start;
+  padding: var(--padding-131xl) var(--padding-mini) var(--padding-61xl);
+  gap: var(--gap-71xl);
+  font-size: var(--font-size-sm);
+  color: var(--color-black);
+}
+.addReader1Device {
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  font-size: var(--font-size-lg);
+  color: var(--color-white);
+  font-family: var(--font-work-sans);
+}

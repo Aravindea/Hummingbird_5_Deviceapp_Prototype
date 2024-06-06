@@ -1,0 +1,140 @@
+.homeIc {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 24px;
+  position: relative;
+  height: 24px;
+  background-image: url(/public/image4@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.addReader {
+  flex: 1;
+  position: relative;
+  font-weight: 600;
+}
+.settingsSvgrepoCom1Icon {
+  width: 24px;
+  position: relative;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.homeTitleBar,
+.homeTitleBar1 {
+  display: flex;
+  align-items: center;
+}
+.homeTitleBar1 {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 var(--padding-11xl) 0 0;
+  box-sizing: border-box;
+  max-width: 768px;
+}
+.homeTitleBar {
+  align-self: stretch;
+  background-color: var(--color-black);
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-sm) var(--padding-mini);
+}
+.device1Connected,
+.image23Icon {
+  position: relative;
+}
+.image23Icon {
+  width: 131px;
+  height: 116px;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+}
+.connectingGazelleMiniVideo {
+  align-self: stretch;
+  position: relative;
+  font-weight: 500;
+}
+.frameWrapper,
+.image23Parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image23Parent {
+  width: 213px;
+  flex-direction: column;
+  gap: var(--gap-3xs);
+}
+.frameWrapper {
+  align-self: stretch;
+  border-radius: var(--br-9xs);
+  background-color: var(--color-dimgray);
+  overflow: hidden;
+  flex-direction: row;
+  padding: var(--padding-3xs);
+  color: var(--color-silver-200);
+}
+.connected {
+  width: 112px;
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.covid19Test,
+.device1ConnectedParent {
+  border-radius: var(--br-9xs);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.covid19Test {
+  width: 158px;
+  border: 2px solid var(--color-orange);
+  height: 50px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-base) var(--padding-3xs);
+  font-size: var(--font-size-base);
+  color: var(--color-orange);
+}
+.device1ConnectedParent {
+  width: 100%;
+  background-color: var(--color-whitesmoke);
+  justify-content: flex-start;
+  padding: var(--padding-11xl) var(--padding-3xs);
+  gap: var(--gap-11xl);
+  max-width: 375px;
+}
+.addReaderConnected1Device,
+.bodyScreen,
+.device1ConnectedParent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bodyScreen {
+  align-self: stretch;
+  background-color: var(--color-white);
+  overflow: hidden;
+  justify-content: flex-start;
+  padding: var(--padding-131xl) var(--padding-mini) 208px;
+  font-size: var(--font-size-sm);
+  color: var(--color-black);
+}
+.addReaderConnected1Device {
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  font-size: var(--font-size-lg);
+  color: var(--color-white);
+  font-family: var(--font-work-sans);
+}

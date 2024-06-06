@@ -1,0 +1,275 @@
+.home {
+  flex: 1;
+  position: relative;
+  font-weight: 600;
+}
+.settingsSvgrepoCom1Icon {
+  width: 24px;
+  position: relative;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.vectorIcon {
+  width: 20px;
+  position: relative;
+  height: 20px;
+  mix-blend-mode: normal;
+}
+.homeTitleBar1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 0 var(--padding-xl);
+  box-sizing: border-box;
+  max-width: 768px;
+}
+.homeTitleBar,
+.image23Icon {
+  align-self: stretch;
+  overflow: hidden;
+}
+.homeTitleBar {
+  background-color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-sm) var(--padding-mini);
+}
+.image23Icon {
+  position: relative;
+  max-width: 100%;
+  height: 70px;
+  flex-shrink: 0;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+}
+.image23Wrapper {
+  flex: 1;
+  border-radius: var(--br-9xs);
+  background-color: var(--color-whitesmoke);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-8xs) var(--padding-13xl);
+  box-sizing: border-box;
+  min-width: 144px;
+  max-width: 144px;
+}
+.div {
+  flex: 1;
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  max-width: 40px;
+}
+.frameGroup {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-6xl);
+}
+.wifiSvgrepoCom11 {
+  width: 12px;
+  height: 12px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.div1,
+.frameIcon,
+.wifiSvgrepoCom11 {
+  position: relative;
+  flex-shrink: 0;
+}
+.div1 {
+  width: 28px;
+  display: flex;
+  align-items: center;
+  max-width: 28px;
+}
+.frameIcon {
+  width: 24px;
+  height: 12px;
+  overflow: hidden;
+}
+.wifiSvgrepoCom11Parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: var(--gap-8xs);
+}
+.frameChild {
+  width: 24px;
+  position: relative;
+  border-radius: var(--br-xl);
+  background-color: var(--color-beige);
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.readyParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--gap-8xs);
+  font-size: var(--font-size-xs);
+}
+.frameContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-29xl);
+  max-width: 159px;
+  text-align: right;
+  font-size: var(--font-size-3xs);
+}
+.desktop1Inner,
+.frameParent {
+  display: flex;
+  align-items: center;
+}
+.frameParent {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  gap: var(--gap-3xs);
+}
+.desktop1Inner {
+  width: 100%;
+  border-radius: var(--br-9xs);
+  background-color: var(--color-white);
+  border: 2px solid var(--color-orange);
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-7xs) var(--padding-7xs) var(--padding-7xs)
+    var(--padding-5xs);
+  max-width: 375px;
+  cursor: pointer;
+}
+.addReader {
+  position: relative;
+  font-size: var(--font-size-base);
+  font-family: var(--font-work-sans);
+  color: var(--color-white);
+  text-align: center;
+}
+.helpButton {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-base) var(--padding-3xs);
+  background-color: var(--color-orange);
+  width: 100%;
+  border-radius: var(--br-9xs);
+  height: 54px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  max-width: 203px;
+}
+.helpButton:focus .addReader {
+  color: var(--color-gray-500);
+}
+.review {
+  position: relative;
+  font-weight: 500;
+}
+.reviewButton {
+  width: 140px;
+  border-radius: var(--br-9xs);
+  background-color: var(--color-navajowhite);
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-base) var(--padding-xl);
+  box-sizing: border-box;
+  max-width: 140px;
+}
+.logout {
+  position: relative;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  font-family: var(--font-work-sans);
+  color: var(--color-black);
+  text-align: center;
+}
+.logoutButton,
+.reviewLogout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.logoutButton {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-base) var(--padding-xl);
+  background-color: var(--color-navajowhite);
+  width: 140px;
+  border-radius: var(--br-9xs);
+  overflow: hidden;
+  flex-shrink: 0;
+  align-items: center;
+  box-sizing: border-box;
+  max-width: 140px;
+}
+.reviewLogout {
+  align-self: stretch;
+  align-items: flex-start;
+  gap: var(--gap-7xl);
+}
+.settingsMenuButtons {
+  align-self: stretch;
+  align-items: center;
+  gap: var(--gap-361xl);
+  text-align: center;
+  font-size: var(--font-size-sm);
+}
+.desktop1,
+.homeDevice1ConnectedReady,
+.settingsMenuButtons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.desktop1 {
+  align-self: stretch;
+  background-color: var(--color-white);
+  overflow: hidden;
+  align-items: center;
+  padding: var(--padding-xl) var(--padding-mini) var(--padding-11xl);
+  gap: var(--gap-21xl);
+  text-align: left;
+  font-size: var(--font-size-11xl);
+  color: var(--color-black);
+}
+.homeDevice1ConnectedReady {
+  width: 100%;
+  position: relative;
+  align-items: flex-start;
+  text-align: center;
+  font-size: var(--font-size-lg);
+  color: var(--color-white);
+  font-family: var(--font-work-sans);
+}
