@@ -1,4 +1,4 @@
-import { useCallback,useEffect } from "react";
+import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./AddReaderConnected1Device.module.css";
 
@@ -7,14 +7,6 @@ const AddReaderConnected1Device = () => {
 
   const onHomeIcClick = useCallback(() => {
     navigate("/frame-1");
-  }, [navigate]);
-  
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      navigate("/home-device-1-connected-ready"); // Change this to the path you want to navigate to
-    }, 3000);
-
-    return () => clearTimeout(timer); // Cleanup the timer on component unmount
   }, [navigate]);
 
   return (
