@@ -9,10 +9,6 @@ const FillWellsDevice = () => {
     navigate("/apply-sample-with-stamper");
   }, [navigate]);
 
-  const onStartTimerButtonContainerClick = useCallback(() => {
-    navigate("/hb-variant-running");
-  }, [navigate])
-
   return (
     <div className={styles.fillWellsDevice1}>
       <div className={styles.batteryBar}>
@@ -54,7 +50,7 @@ const FillWellsDevice = () => {
           <img className={styles.fillWellsVideoGif} src="/video4.gif" />
           <div className={styles.startTestButton}>
             <button className={styles.startTest}>
-              <div className={styles.startTest1}   onClick={onStartTimerButtonContainerClick}>START TEST</div>
+              <div className={styles.startTest1}>START TEST</div>
             </button>
           </div>
         </div>

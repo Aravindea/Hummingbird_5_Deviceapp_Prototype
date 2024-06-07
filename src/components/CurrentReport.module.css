@@ -1,0 +1,16 @@
+.image16Icon {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 356px;
+  height: 503.8px;
+  object-fit: cover;
+}
+.currentReport {
+  width: 356px;
+  background-color: var(--color-white);
+  height: 503px;
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+}

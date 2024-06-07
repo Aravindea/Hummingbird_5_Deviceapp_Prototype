@@ -1,47 +1,13 @@
-import { useState, useCallback, useEffect } from "react";
+import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
-import { setPatientInfo1 } from "./store";
 import styles from "./Covid19PatientInfo.module.css";
 
 const Covid19PatientInfo = () => {
   const navigate = useNavigate();
-  const dispatch = useDispatch();
-  const patientDetails = useSelector((state) => state.patient.patientInfo1);
-
-  const [formData, setFormData] = useState({
-    patientId: patientDetails.patientId,
-    testmode: patientDetails.testmode,
-    firstName: patientDetails.firstName,
-    age: patientDetails.age,
-    gender: patientDetails.gender,
-  });
-
-  // Update formData state when patientDetails change in Redux store
-  useEffect(() => {
-    setFormData({
-      patientId: patientDetails.patientId,
-      testmode: patientDetails.testmode,
-      firstName: patientDetails.firstName,
-      age: patientDetails.age,
-      gender: patientDetails.gender,
-    });
-  }, [patientDetails]);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
 
   const onNextButtonClick = useCallback(() => {
-    // Dispatch formData to Redux store
-    dispatch(setPatientInfo1(formData));
-    // Navigate to next page
-    navigate("/covid19-confirm-patient-info", { state: formData });
-  }, [dispatch, formData, navigate]);
+    navigate("/covid19-confirm-patient-info");
+  }, [navigate]);
 
   return (
     <div className={styles.covid19PatientInfoDevice}>
@@ -63,20 +29,12 @@ const Covid19PatientInfo = () => {
                 className={styles.patientIdInputField}
                 placeholder="ENTER USER ID"
                 type="text"
-                name="patientId"
-                value={formData.patientId}
-                onChange={handleChange}
+                name="yes"
               />
             </div>
             <div className={styles.patientId}>
               <div className={styles.testMode}>TEST MODE</div>
-              <select
-                className={styles.patientIdInputField1}
-                name="yes"
-                value={formData.testmode}
-                onChange={handleChange}
-              >
-                {/* <option value="" selected>TEST MODE</option> */}
+              <select className={styles.patientIdInputField1} name="yes">
                 <option value="Yes">QUICK TEST</option>
               </select>
             </div>
@@ -86,9 +44,7 @@ const Covid19PatientInfo = () => {
                 className={styles.patientIdInputField}
                 placeholder="PATIENT FIRST NAME"
                 type="text"
-                name="firstName"
-                value={formData.firstName}
-                onChange={handleChange}
+                name="yes"
               />
             </div>
             <div className={styles.patientId}>
@@ -98,9 +54,7 @@ const Covid19PatientInfo = () => {
                   className={styles.ageInputField}
                   placeholder="ENTER AGE"
                   type="text"
-                  name="age"
-                  value={formData.age}
-                  onChange={handleChange}
+                  name="yes"
                 />
                 <div className={styles.years}>Years</div>
               </div>
@@ -110,36 +64,15 @@ const Covid19PatientInfo = () => {
               <div className={styles.gender1}>
                 <div className={styles.genderRadio1}>
                   <div className={styles.male}>
-                    <input
-                      className={styles.maleRadio}
-                      type="radio"
-                      name="gender"
-                      value="male"
-                      checked={formData.gender === "male"}
-                      onChange={handleChange}
-                    />
+                    <input className={styles.maleRadio} type="radio" />
                     <div className={styles.testMode}>MALE</div>
                   </div>
                   <div className={styles.male}>
-                    <input
-                      className={styles.maleRadio}
-                      type="radio"
-                      name="gender"
-                      value="female"
-                      checked={formData.gender === "female"}
-                      onChange={handleChange}
-                    />
+                    <input className={styles.maleRadio} type="radio" />
                     <div className={styles.testMode}>FEMALE</div>
                   </div>
                   <div className={styles.male}>
-                    <input
-                      className={styles.maleRadio}
-                      type="radio"
-                      name="gender"
-                      value="others"
-                      checked={formData.gender === "others"}
-                      onChange={handleChange}
-                    />
+                    <input className={styles.maleRadio} type="radio" />
                     <div className={styles.testMode}>OTHERS</div>
                   </div>
                 </div>
