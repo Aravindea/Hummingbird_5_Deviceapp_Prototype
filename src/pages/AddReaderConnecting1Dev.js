@@ -43,6 +43,16 @@ const AddReaderConnecting1Dev = () => {
     navigate("/frame-1");
   }, [navigate]);
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      navigate("/add-reader-connected-1-device"); // Change this to the path you want to navigate to
+    }, 3000);
+
+    return () => clearTimeout(timer); // Cleanup the timer on component unmount
+  }, [navigate]);
+
+
+
   return (
     <div className={styles.addReaderConnecting1Dev}>
       <div className={styles.homeTitleBar}>
