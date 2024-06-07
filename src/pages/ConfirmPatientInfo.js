@@ -1,9 +1,17 @@
-import { useCallback } from "react";
-import { useNavigate } from "react-router-dom";
+import { useCallback,useEffect } from "react";
+import { useNavigate,useLocation} from "react-router-dom";
 import styles from "./ConfirmPatientInfo.module.css";
 
 const ConfirmPatientInfo = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const formData = location.state || {
+    patientId: '',
+    isInfant: false,
+    firstName: '',
+    age: '',
+    gender: ''
+  };
 
   const onLeftArrowPreviousPageIcClick = useCallback(() => {
     navigate("/hb-variant-patient-info");
@@ -16,6 +24,10 @@ const ConfirmPatientInfo = () => {
   const onContinueButtonClick = useCallback(() => {
     navigate("/mix-blood-and-marker-fluid-a");
   }, [navigate]);
+
+  useEffect(() => {
+    console.log(formData);
+  }, [formData]);
 
   return (
     <div className={styles.confirmPatientInfoDevice1}>
@@ -53,11 +65,11 @@ const ConfirmPatientInfo = () => {
                 <div className={styles.div4}>:</div>
               </div>
               <div className={styles.details}>
-                <div className={styles.patientId}>--------------------</div>
-                <div className={styles.patientId}>--------------------</div>
-                <div className={styles.patientId}>--------------------</div>
-                <div className={styles.patientId}>--------------------</div>
-                <div className={styles.patientId}>---------------------</div>
+                <div className={styles.patientId}>{formData.patientId}</div>
+                <div className={styles.patientId}>{formData.isInfant}</div>
+                <div className={styles.patientId}>{formData.firstName}</div>
+                <div className={styles.patientId}>{formData.age}</div>
+                <div className={styles.patientId}>{formData.gender}</div>
               </div>
             </div>
           </div>

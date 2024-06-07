@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback,useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./WetPaperBDevice.module.css";
 
@@ -7,6 +7,16 @@ const WetPaperBDevice = () => {
 
   const onLeftArrowPreviousPageIcClick = useCallback(() => {
     navigate("/wet-paper-a");
+  }, [navigate]);
+
+  useEffect(() => {
+    // Navigate to another page after 3 seconds
+    const timer = setTimeout(() => {
+      navigate("/apply-sample-with-stamper"); // Change this to the path you want to navigate to
+    }, 3000);
+
+    // Cleanup the timer
+    return () => clearTimeout(timer);
   }, [navigate]);
 
   return (

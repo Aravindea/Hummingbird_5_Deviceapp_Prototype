@@ -339,7 +339,6 @@
 .printButton {
   display: flex;
   align-items: flex-start;
-  cursor: pointer;
 }
 .buttons,
 .continueButton,

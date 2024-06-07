@@ -6,6 +6,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import Splash from "./pages/Splash";
+import HomeDevice1SelectTest from "./components/HomeDevice1SelectTest";
 import LoginUIDPWD from "./pages/LoginUIDPWD";
 import Home from "./pages/Home";
 import AddReader1Device from "./pages/AddReader1Device";
@@ -15,12 +16,14 @@ import HomeDevice1ConnectedReady from "./pages/HomeDevice1ConnectedReady";
 import MixBloodAndMarkerFluidA from "./pages/MixBloodAndMarkerFluidA";
 import Covid19PrepareSampleDevic from "./pages/Covid19PrepareSampleDevic";
 import Covid19TestDevice from "./pages/Covid19TestDevice";
+import Covid19TestResultDevice from "./pages/Covid19TestResultDevice";
 import MixBloodAndMarkerFluidB from "./pages/MixBloodAndMarkerFluidB";
 import WetPaperADevice from "./pages/WetPaperADevice";
 import WetPaperBDevice from "./pages/WetPaperBDevice";
 import ApplySampleWithStamperDev from "./pages/ApplySampleWithStamperDev";
 import FillWellsDevice from "./pages/FillWellsDevice";
 import HbVariantRunningDevice from "./pages/HbVariantRunningDevice";
+import HbVariantSummaryTestResult from "./pages/HbVariantSummaryTestResult";
 import HomeDevice1TestRunning from "./pages/HomeDevice1TestRunning";
 import HomeDevice5ConnectedReady from "./pages/HomeDevice5ConnectedReady";
 import HbVariantPatientInfo from "./pages/HbVariantPatientInfo";
@@ -28,9 +31,6 @@ import Covid19PatientInfo from "./pages/Covid19PatientInfo";
 import ConfirmPatientInfo from "./pages/ConfirmPatientInfo";
 import Covid19ConfirmPatientInfo from "./pages/Covid19ConfirmPatientInfo";
 import AddReader5Device from "./pages/AddReader5Device";
-import HomeDevice1SelectTest from "./components/HomeDevice1SelectTest";
-import Covid19TestResultDevice from "./pages/Covid19TestResultDevice";
-import HbVariantSummaryTestResult from "./pages/HbVariantSummaryTestResult";
 
 function App() {
   const action = useNavigationType();
@@ -49,6 +49,10 @@ function App() {
 
     switch (pathname) {
       case "/":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/home-device-1-select-test":
         title = "";
         metaDescription = "";
         break;
@@ -88,6 +92,10 @@ function App() {
         title = "";
         metaDescription = "";
         break;
+      case "/covid19-test-result-device-1":
+        title = "";
+        metaDescription = "";
+        break;
       case "/mix-blood-and-marker-fluid-b":
         title = "";
         metaDescription = "";
@@ -109,6 +117,10 @@ function App() {
         metaDescription = "";
         break;
       case "/hb-variant-running":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/hb-variant-summary-test-results-a-device-1":
         title = "";
         metaDescription = "";
         break;
@@ -140,18 +152,6 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/home-device-1-select-test":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/covid19-test-result-device-1":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/hb-variant-summary-test-results-a-device-1":
-        title = "";
-        metaDescription = "";
-        break;
     }
 
     if (title) {
@@ -171,6 +171,10 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Splash />} />
+      <Route
+        path="/home-device-1-select-test"
+        element={<HomeDevice1SelectTest />}
+      />
       <Route path="/loginuid-pwd" element={<LoginUIDPWD />} />
       <Route path="/frame-1" element={<Home />} />
       <Route path="/add-reader" element={<AddReader1Device />} />
@@ -196,6 +200,10 @@ function App() {
       />
       <Route path="/covid19-test" element={<Covid19TestDevice />} />
       <Route
+        path="/covid19-test-result-device-1"
+        element={<Covid19TestResultDevice />}
+      />
+      <Route
         path="/mix-blood-and-marker-fluid-b"
         element={<MixBloodAndMarkerFluidB />}
       />
@@ -207,6 +215,10 @@ function App() {
       />
       <Route path="/fill-wells" element={<FillWellsDevice />} />
       <Route path="/hb-variant-running" element={<HbVariantRunningDevice />} />
+      <Route
+        path="/hb-variant-summary-test-results-a-device-1"
+        element={<HbVariantSummaryTestResult />}
+      />
       <Route
         path="/home-device-1-test-running"
         element={<HomeDevice1TestRunning />}
@@ -226,18 +238,6 @@ function App() {
         element={<Covid19ConfirmPatientInfo />}
       />
       <Route path="/add-reader-5-device" element={<AddReader5Device />} />
-      <Route
-        path="/home-device-1-select-test"
-        element={<HomeDevice1SelectTest />}
-      />
-      <Route
-        path="/covid19-test-result-device-1"
-        element={<Covid19TestResultDevice />}
-      />
-      <Route
-        path="/hb-variant-summary-test-results-a-device-1"
-        element={<HbVariantSummaryTestResult />}
-      />
     </Routes>
   );
 }

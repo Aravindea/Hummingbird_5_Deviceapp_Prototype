@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback,useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./HbVariantRunningDevice.module.css";
 
@@ -11,6 +11,16 @@ const HbVariantRunningDevice = () => {
 
   const onLeftArrowPreviousPageIcClick = useCallback(() => {
     navigate("/fill-wells");
+  }, [navigate]);
+
+  useEffect(() => {
+    // Navigate to another page after 3 seconds
+    const timer = setTimeout(() => {
+      navigate("/hb-variant-summary-test-results-a-device-1"); // Change this to the path you want to navigate to
+    }, 14000);
+
+    // Cleanup the timer
+    return () => clearTimeout(timer);
   }, [navigate]);
 
   return (
