@@ -5,9 +5,9 @@ import styles from "./HomeDevice1TestRunning.module.css";
 const HomeDevice1TestRunning = () => {
   const navigate = useNavigate();
 
-  const onFrameContainerClick = useCallback(() => {
-    navigate("/home-device-1-select-test");
-  }, [navigate]);
+  // const onFrameContainerClick = useCallback(() => {
+  //   navigate("/home-device-1-select-test");
+  // }, [navigate]);
 
   const onHelpButtonClick = useCallback(() => {
     navigate("/add-reader");

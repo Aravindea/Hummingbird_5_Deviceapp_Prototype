@@ -295,6 +295,8 @@
   padding: var(--padding-base) var(--padding-xl);
   box-sizing: border-box;
   max-width: 140px;
+
+  /* margin-top: 300px;  */
 }
 .logout {
   position: relative;
@@ -322,6 +324,7 @@
   align-items: center;
   box-sizing: border-box;
   max-width: 140px;
+  /* margin-top: 300px;  */
 }
 .reviewLogout {
   align-self: stretch;
@@ -360,4 +363,33 @@
   font-size: var(--font-size-lg);
   color: var(--color-white);
   font-family: var(--font-work-sans);
+}
+
+
+.helpButton {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-base) var(--padding-3xs);
+  background-color: var(--color-orange);
+  width: 100%;
+  border-radius: var(--br-9xs);
+  height: 54px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  max-width: 203px;
+}
+.helpButton:focus .addReader {
+  color: var(--color-gray-500);
+}
+.addReader {
+  position: relative;
+  font-size: var(--font-size-base);
+  font-family: var(--font-work-sans);
+  color: var(--color-white);
+  text-align: center;
 }

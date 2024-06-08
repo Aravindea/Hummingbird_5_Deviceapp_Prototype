@@ -11,8 +11,8 @@ const HomeDevice1ConnectedReady = () => {
   }, [navigate]);
 
   const onHelpButtonClick = useCallback(() => {
-    // Please sync "Add Reader 2 device" to the project
-  }, []);
+    navigate("/home-device-5-connected-ready");
+  }, [navigate]);
 
   const onLogoutButtonClick = useCallback(() => {
     navigate("/loginuid-pwd");

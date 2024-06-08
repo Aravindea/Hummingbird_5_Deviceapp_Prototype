@@ -32,56 +32,112 @@ const HomeDevice1SelectTest = () => {
         </div>
       </div>
       <div className={styles.desktop1}>
-        <div className={styles.frameParent}>
-          <div className={styles.settingsMenuButtonsParent}>
-            <div
-              className={styles.settingsMenuButtons}
-              onClick={onSettingsMenuButtonsContainerClick}
-            >
-              <div className={styles.settingsMenuButtons1}>
-                <button className={styles.helpButton}>
-                  <b className={styles.hbVariantTest}>Hb VARIANT TEST</b>
-                </button>
-              </div>
-              <div className={styles.reviewLogout}>
-                <div className={styles.reviewButton}>
-                  <div className={styles.review}>REVIEW</div>
+      <div className={styles.frameParent}>
+          <div className={styles.frameGroup}>
+            <div className={styles.frameWrapper}>
+              <div className={styles.parent}>
+                <div className={styles.div}>1</div>
+                <div className={styles.readyParent}>
+                  <div className={styles.selectTest}>READY</div>
+                  <DotLottiePlayer
+                    className={styles.frameChild}
+                    autoplay
+                    src="/frame_2393.json"
+                    loop
+                  />
                 </div>
-                <button className={styles.logoutButton}>
-                  <div className={styles.logout}>LOGOUT</div>
-                </button>
               </div>
             </div>
-            <div className={styles.settingsMenuButtons2}>
-              <div className={styles.settingsMenuButtons1}>
-                <button
-                  className={styles.helpButton1}
-                  onClick={onHelpButton1Click}
-                >
-                  <b className={styles.hbVariantTest}>COVID-19</b>
-                </button>
-              </div>
-              <div className={styles.reviewLogout}>
-                <div className={styles.reviewButton}>
-                  <div className={styles.review}>REVIEW</div>
+            <div className={styles.frameWrapper}>
+              <div className={styles.parent}>
+                <div className={styles.div}>2</div>
+                <div className={styles.readyParent}>
+                  <div className={styles.selectTest}>READY</div>
+                  <DotLottiePlayer
+                    className={styles.frameChild}
+                    autoplay
+                    src="/frame_2393.json"
+                    loop
+                  />
                 </div>
-                <button className={styles.logoutButton}>
-                  <div className={styles.logout}>LOGOUT</div>
-                </button>
               </div>
             </div>
           </div>
-          <div className={styles.frameWrapper}>
-            <div className={styles.parent}>
-              <div className={styles.div}>1</div>
-              <div className={styles.readyParent}>
-                <div className={styles.selectTest}>READY</div>
-                <DotLottiePlayer
-                  className={styles.frameChild}
-                  autoplay
-                  src="/frame_2393.json"
-                  loop
-                />
+          <div className={styles.frameGroup}>
+            <div className={styles.frameWrapper}>
+              <div className={styles.parent}>
+                <div className={styles.div}>3</div>
+                <div className={styles.readyParent}>
+                  <div className={styles.selectTest}>READY</div>
+                  <DotLottiePlayer
+                    className={styles.frameChild}
+                    autoplay
+                    src="/frame_2393.json"
+                    loop
+                  />
+                </div>
+              </div>
+            </div>
+            <div className={styles.frameWrapper}>
+              <div className={styles.parent}>
+                <div className={styles.div}>4</div>
+                <div className={styles.readyParent}>
+                  <div className={styles.selectTest}>READY</div>
+                  <DotLottiePlayer
+                    className={styles.frameChild}
+                    autoplay
+                    src="/frame_2393.json"
+                    loop
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.frameParent1}>
+            <div className={styles.settingsMenuButtonsParent}>
+              <div className={styles.settingsMenuButtons} onClick={onSettingsMenuButtonsContainerClick}>
+                <div className={styles.settingsMenuButtons1}>
+                  <button className={styles.helpButton}>
+                    <b className={styles.hbVariantTest}>Hb VARIANT TEST</b>
+                  </button>
+                </div>
+                <div className={styles.reviewLogout}>
+                  <div className={styles.reviewButton}>
+                    <div className={styles.review}>REVIEW</div>
+                  </div>
+                  <button className={styles.logoutButton}>
+                    <div className={styles.logout}>LOGOUT</div>
+                  </button>
+                </div>
+              </div>
+              <div className={styles.settingsMenuButtons}>
+                <div className={styles.settingsMenuButtons1}>
+                  <button className={styles.helpButton1}  onClick={onHelpButton1Click}>
+                    <b className={styles.hbVariantTest}>COVID-19</b>
+                  </button>
+                </div>
+                <div className={styles.reviewLogout}>
+                  <div className={styles.reviewButton}>
+                    <div className={styles.review}>REVIEW</div>
+                  </div>
+                  <button className={styles.logoutButton}>
+                    <div className={styles.logout}>LOGOUT</div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className={styles.frameWrapper3}>
+              <div className={styles.parent}>
+                <div className={styles.div}>5</div>
+                <div className={styles.readyParent}>
+                  <div className={styles.selectTest}>READY</div>
+                  <DotLottiePlayer
+                    className={styles.frameChild}
+                    autoplay
+                    src="/frame_2393.json"
+                    loop
+                  />
+                </div>
               </div>
             </div>
           </div>

@@ -1,25 +1,4 @@
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.homeIc {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  width: 24px;
-  position: relative;
-  height: 24px;
-  background-image: url(/public/image4@2x.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-}
-.addReader {
+.selectTest {
   flex: 1;
   position: relative;
   font-weight: 600;
@@ -32,6 +11,12 @@
   flex-shrink: 0;
   display: none;
 }
+.vectorIcon {
+  width: 20px;
+  position: relative;
+  height: 20px;
+  mix-blend-mode: normal;
+}
 .homeTitleBar,
 .homeTitleBar1 {
   display: flex;
@@ -41,7 +26,7 @@
   width: 100%;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 var(--padding-11xl) 0 0;
+  padding: 0 0 0 var(--padding-xl);
   box-sizing: border-box;
   max-width: 768px;
 }
@@ -54,7 +39,7 @@
   padding: var(--padding-sm) var(--padding-mini);
 }
 .div,
-.ledOffline {
+.frameChild {
   position: relative;
   flex-shrink: 0;
 }
@@ -65,14 +50,14 @@
   align-items: center;
   height: 29px;
 }
-.ledOffline {
+.frameChild {
   width: 24px;
   border-radius: var(--br-xl);
-  background-color: var(--color-silver-100);
+  background-color: var(--color-beige);
   height: 24px;
   overflow: hidden;
 }
-.offlineParent {
+.readyParent {
   flex: 1;
   display: flex;
   flex-direction: row;
@@ -91,7 +76,7 @@
 .parent {
   align-self: stretch;
   flex-direction: row;
-  gap: var(--gap-xl);
+  gap: var(--gap-7xl);
 }
 .frameWrapper {
   flex: 1;
@@ -104,16 +89,7 @@
     var(--padding-mini);
   max-width: 177px;
 }
-.frameChild {
-  width: 24px;
-  position: relative;
-  border-radius: var(--br-xl);
-  background-color: var(--color-beige);
-  height: 24px;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-.frameGroup {
+.frameContainer {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -121,125 +97,135 @@
   justify-content: center;
   gap: var(--gap-3xs);
 }
-.ledBlueOn {
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  background: linear-gradient(-19.44deg, #006bb8, #86bde4);
-  width: 20px;
-  height: 20px;
+.hbVariantTest {
+  position: relative;
+  font-size: var(--font-size-base);
+  font-family: var(--font-work-sans);
+  color: var(--color-white);
+  text-align: center;
 }
-.ledBlueOn,
-.ledGreenOn,
-.ledTestRunningBlue {
-  border-radius: var(--br-xl);
+.helpButton {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-base) var(--padding-3xs);
+  background-color: var(--color-orange);
+  width: 203px;
+  border-radius: var(--br-9xs);
+  height: 54px;
   overflow: hidden;
-}
-.ledTestRunningBlue {
-  width: 24px;
-  position: relative;
-  background-color: var(--color-lightblue);
-  height: 24px;
   flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
-.ledGreenOn {
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  background: linear-gradient(-19.44deg, #00b812, #89c58f);
-  width: 20px;
-  height: 20px;
+.helpButton1:focus .hbVariantTest,
+.helpButton:focus .hbVariantTest {
+  color: var(--color-gray-500);
 }
-.device1Connecting,
-.image23Icon {
-  position: relative;
+.settingsMenuButtons1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
-.image23Icon {
-  width: 131px;
-  height: 116px;
-  object-fit: cover;
-  mix-blend-mode: multiply;
-}
-.connectingGazelleMiniVideo {
-  align-self: stretch;
+.review {
   position: relative;
   font-weight: 500;
 }
-.frameWrapper3,
-.image23Parent {
-  display: flex;
+.reviewButton {
+  width: 169px;
+  border-radius: var(--br-9xs);
+  background-color: var(--color-navajowhite);
+  overflow: hidden;
+  display: none;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+  padding: var(--padding-base) var(--padding-47xl);
+  box-sizing: border-box;
 }
-.image23Parent {
-  width: 213px;
+.logout {
+  position: relative;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  font-family: var(--font-work-sans);
+  color: var(--color-black);
+  text-align: center;
+}
+.logoutButton {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-base) var(--padding-47xl);
+  background-color: var(--color-navajowhite);
+  width: 169px;
+  border-radius: var(--br-9xs);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.reviewLogout,
+.settingsMenuButtons {
   flex-direction: column;
-  gap: var(--gap-3xs);
+  justify-content: flex-start;
+}
+.reviewLogout {
+  display: none;
+  align-items: flex-start;
+  gap: var(--gap-7xl);
+}
+.settingsMenuButtons {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-88xl);
+}
+.helpButton1 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-base) var(--padding-3xs);
+  background-color: var(--color-orange);
+  width: 203px;
+  border-radius: var(--br-9xs);
+  height: 54px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.settingsMenuButtonsParent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-11xl);
 }
 .frameWrapper3 {
-  align-self: stretch;
-  border-radius: var(--br-9xs);
-  background-color: var(--color-dimgray);
-  overflow: hidden;
-  flex-direction: row;
-  padding: var(--padding-3xs);
-  color: var(--color-silver-200);
-}
-.b,
-.b1,
-.b2,
-.connecting {
-  width: 112px;
-  position: relative;
-  display: inline-block;
-  flex-shrink: 0;
-}
-.b,
-.b1,
-.b2 {
-  height: 19px;
-  width: 4px;
-  opacity: 0;
-}
-.b.animate {
-  animation: 1s ease 0s infinite normal forwards fade-in;
-}
-.b1.animate {
-  animation: 1s ease 0.2s infinite normal forwards fade-in;
-}
-.b2.animate {
-  animation: 1s ease 0.4s infinite normal forwards fade-in;
-}
-.covid19Test,
-.parent2 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.parent2 {
-  gap: 2px;
-}
-.covid19Test {
-  width: 158px;
+  width: 177px;
   border-radius: var(--br-9xs);
   border: 2px solid var(--color-orange);
   box-sizing: border-box;
-  height: 50px;
   overflow: hidden;
-  flex-shrink: 0;
-  padding: var(--padding-base) var(--padding-3xs);
-  font-size: var(--font-size-base);
-  color: var(--color-orange);
+  padding: var(--padding-3xs) var(--padding-8xs) var(--padding-3xs)
+    var(--padding-mini);
+  text-align: left;
+  font-size: var(--font-size-11xl);
 }
-.device1ConnectingParent,
-.frameParent {
+.frameParent,
+.frameParent2,
+.frameWrapper3 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
 }
-.device1ConnectingParent {
+.frameParent2 {
   width: 100%;
   border-radius: var(--br-9xs);
   background-color: var(--color-whitesmoke);
@@ -281,30 +267,30 @@
 }
 .cancelButtonWrapper {
   align-self: stretch;
-  justify-content: flex-start;
-}
-.addReaderConnecting5Dev,
-.bodyScreen,
-.cancelButtonWrapper {
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
-.bodyScreen {
+.cancelButtonWrapper,
+.desktop1,
+.homeDevice5SelectTest {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.desktop1 {
   align-self: stretch;
   background-color: var(--color-white);
   overflow: hidden;
-  justify-content: flex-start;
+  align-items: center;
   padding: var(--padding-xl) var(--padding-mini) var(--padding-61xl);
   gap: var(--gap-71xl);
   text-align: left;
   font-size: var(--font-size-11xl);
   color: var(--color-black);
 }
-.addReaderConnecting5Dev {
+.homeDevice5SelectTest {
   width: 100%;
   position: relative;
-  justify-content: center;
+  align-items: flex-start;
   text-align: center;
   font-size: var(--font-size-lg);
   color: var(--color-white);

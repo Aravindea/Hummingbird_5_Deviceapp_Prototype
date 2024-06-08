@@ -45,6 +45,103 @@
   justify-content: flex-start;
   padding: var(--padding-sm) var(--padding-mini);
 }
+.div,
+.ledOffline {
+  position: relative;
+  flex-shrink: 0;
+}
+.div {
+  width: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  height: 29px;
+}
+.ledOffline {
+  width: 24px;
+  border-radius: var(--br-xl);
+  background-color: var(--color-silver-100);
+  height: 24px;
+  overflow: hidden;
+}
+.offlineParent {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--gap-8xs);
+  text-align: right;
+  font-size: var(--font-size-3xs);
+}
+.frameWrapper,
+.parent {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.parent {
+  align-self: stretch;
+  flex-direction: row;
+  gap: var(--gap-xl);
+}
+.frameWrapper {
+  flex: 1;
+  border-radius: var(--br-9xs);
+  border: 2px solid var(--color-orange);
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-direction: column;
+  padding: var(--padding-3xs) var(--padding-8xs) var(--padding-3xs)
+    var(--padding-mini);
+  max-width: 177px;
+}
+.frameChild {
+  width: 24px;
+  position: relative;
+  border-radius: var(--br-xl);
+  background-color: var(--color-beige);
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.frameParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-3xs);
+}
+.ledBlueOn {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background: linear-gradient(-19.44deg, #006bb8, #86bde4);
+  width: 20px;
+  height: 20px;
+}
+.ledBlueOn,
+.ledGreenOn,
+.ledTestRunningBlue {
+  border-radius: var(--br-xl);
+  overflow: hidden;
+}
+.ledTestRunningBlue {
+  width: 24px;
+  position: relative;
+  background-color: var(--color-lightblue);
+  height: 24px;
+  flex-shrink: 0;
+}
+.ledGreenOn {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background: linear-gradient(-19.44deg, #00b812, #89c58f);
+  width: 20px;
+  height: 20px;
+}
 .device1Connected,
 .image23Icon {
   position: relative;
@@ -60,7 +157,7 @@
   position: relative;
   font-weight: 500;
 }
-.frameWrapper,
+.frameWrapper2,
 .image23Parent {
   display: flex;
   align-items: center;
@@ -71,7 +168,7 @@
   flex-direction: column;
   gap: var(--gap-3xs);
 }
-.frameWrapper {
+.frameWrapper2 {
   align-self: stretch;
   border-radius: var(--br-9xs);
   background-color: var(--color-dimgray);
@@ -112,8 +209,10 @@
   padding: var(--padding-11xl) var(--padding-3xs);
   gap: var(--gap-11xl);
   max-width: 375px;
+  text-align: center;
+  font-size: var(--font-size-sm);
 }
-.addReaderConnected1Device,
+.addReaderConnected5Device,
 .bodyScreen,
 .device1ConnectedParent {
   display: flex;
@@ -125,11 +224,13 @@
   background-color: var(--color-white);
   overflow: hidden;
   justify-content: flex-start;
-  padding: var(--padding-131xl) var(--padding-mini) 208px;
-  font-size: var(--font-size-sm);
+  padding: var(--padding-xl) var(--padding-mini) 208px;
+  gap: var(--gap-3xs);
+  text-align: left;
+  font-size: var(--font-size-11xl);
   color: var(--color-black);
 }
-.addReaderConnected1Device {
+.addReaderConnected5Device {
   width: 100%;
   position: relative;
   justify-content: center;

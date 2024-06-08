@@ -1,23 +1,34 @@
-import { useCallback } from "react";
+import { useCallback,useState,useEffect } from "react";
 import { DotLottiePlayer } from "@dotlottie/react-player";
 import { useNavigate } from "react-router-dom";
 import styles from "./AddReader5Device.module.css";
+import { useSelector } from "react-redux";
 
 const AddReader5Device = () => {
   const navigate = useNavigate();
+  const deviceconnect = useSelector((state)=>state.AddDeviceDetails.addDevice)
+  console.log(deviceconnect,"deviceconnect");
+
 
   const onHomeIcClick = useCallback(() => {
     navigate("/frame-1");
   }, [navigate]);
 
   const onCovid19TestContainerClick = useCallback(() => {
+    navigate("/add-reader-connecting")
     // Please sync "Add Reader_Connecting... 5 device" to the project
-  }, []);
+  }, [navigate]);
 
   const onCancelButtonClick = useCallback(() => {
     // Please sync "Home_device 2 connected_ready" to the project
   }, []);
-
+  const getConnectingDeviceNumber = () => {
+    if (deviceconnect.device1&&!(deviceconnect.device2||deviceconnect.device3||deviceconnect.device4)) return 2;
+    if ((deviceconnect.device1&&deviceconnect.device2)&&!(deviceconnect.device3||deviceconnect.device4)) return 3;
+    if ((deviceconnect.device1&&deviceconnect.device2&&deviceconnect.device3 === true)&&(!deviceconnect.device4)) return 4;
+    if (deviceconnect.device1&&deviceconnect.device2&&deviceconnect.device3 === true&&deviceconnect.device4 === true) return 5;
+    // return 5;
+  };
   return (
     <div className={styles.addReader5Device}>
       <div className={styles.homeTitleBar}>
@@ -34,7 +45,8 @@ const AddReader5Device = () => {
       <div className={styles.bodyScreen}>
         <div className={styles.frameParent}>
           <div className={styles.frameGroup}>
-            <div className={styles.frameWrapper}>
+          {deviceconnect.device1===true&&
+          <div className={styles.frameWrapper}>
               <div className={styles.parent}>
                 <div className={styles.div}>1</div>
                 <div className={styles.offlineParent}>
@@ -43,6 +55,8 @@ const AddReader5Device = () => {
                 </div>
               </div>
             </div>
+}
+{deviceconnect.device2===true&&
             <div className={styles.frameWrapper}>
               <div className={styles.parent}>
                 <div className={styles.div}>2</div>
@@ -57,8 +71,10 @@ const AddReader5Device = () => {
                 </div>
               </div>
             </div>
+}
           </div>
           <div className={styles.frameGroup}>
+          {deviceconnect.device3===true&&
             <div className={styles.frameWrapper}>
               <div className={styles.parent}>
                 <div className={styles.div}>3</div>
@@ -70,6 +86,8 @@ const AddReader5Device = () => {
                 </div>
               </div>
             </div>
+}
+{deviceconnect.device4===true&&
             <div className={styles.frameWrapper}>
               <div className={styles.parent}>
                 <div className={styles.div}>4</div>
@@ -81,9 +99,10 @@ const AddReader5Device = () => {
                 </div>
               </div>
             </div>
+}
           </div>
           <div className={styles.addDevice4Parent}>
-            <b className={styles.addDevice4}>ADD DEVICE #4</b>
+            <b className={styles.addDevice4}>ADD DEVICE #{getConnectingDeviceNumber()}</b>
             <div className={styles.frameWrapper3}>
               <div className={styles.image23Parent}>
                 <img

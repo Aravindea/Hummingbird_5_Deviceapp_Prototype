@@ -31,6 +31,7 @@ import Covid19PatientInfo from "./pages/Covid19PatientInfo";
 import ConfirmPatientInfo from "./pages/ConfirmPatientInfo";
 import Covid19ConfirmPatientInfo from "./pages/Covid19ConfirmPatientInfo";
 import AddReader5Device from "./pages/AddReader5Device";
+import HomeDevice5SelectTest from "./pages/HomeDevice5SelectTest";
 
 function App() {
   const action = useNavigationType();
@@ -173,7 +174,7 @@ function App() {
       <Route path="/" element={<Splash />} />
       <Route
         path="/home-device-1-select-test"
-        element={<HomeDevice1SelectTest />}
+        element={<HomeDevice5SelectTest />}
       />
       <Route path="/loginuid-pwd" element={<LoginUIDPWD />} />
       <Route path="/frame-1" element={<Home />} />
