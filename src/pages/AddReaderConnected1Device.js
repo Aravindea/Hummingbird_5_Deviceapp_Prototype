@@ -61,9 +61,18 @@ const AddReaderConnected1Device = () => {
           <div className={styles.frameWrapper}>
             <div className={styles.parent}>
               <div className={styles.div}>1</div>
-              <div className={styles.offlineParent}>
+              {/* <div className={styles.offlineParent}>
                 <div className={styles.addReader}>OFFLINE</div>
                 <div className={styles.ledOffline} />
+              </div> */}
+              <div className={styles.offlineParent}>
+                <div className={styles.addReader}>READY</div>
+                <DotLottiePlayer
+                  className={styles.frameChild}
+                  autoplay
+                  src="/frame_2393.json"
+                  loop
+                />
               </div>
             </div>
           </div>
@@ -91,11 +100,20 @@ const AddReaderConnected1Device = () => {
           <div className={styles.frameWrapper}>
             <div className={styles.parent}>
               <div className={styles.div}>3</div>
-              <div className={styles.offlineParent}>
+              {/* <div className={styles.offlineParent}>
                 <div className={styles.addReader}>TEST RUNNING</div>
                 <div className={styles.ledTestRunningBlue}>
                   <div className={styles.ledBlueOn} />
                 </div>
+              </div> */}
+              <div className={styles.offlineParent}>
+                <div className={styles.addReader}>READY</div>
+                <DotLottiePlayer
+                  className={styles.frameChild}
+                  autoplay
+                  src="/frame_2393.json"
+                  loop
+                />
               </div>
             </div>
           </div>
@@ -104,11 +122,20 @@ const AddReaderConnected1Device = () => {
           <div className={styles.frameWrapper}>
             <div className={styles.parent}>
               <div className={styles.div}>4</div>
-              <div className={styles.offlineParent}>
+              {/* <div className={styles.offlineParent}>
                 <div className={styles.addReader}>TEST COMPLETED</div>
                 <div className={styles.frameChild}>
                   <div className={styles.ledGreenOn} />
                 </div>
+              </div> */}
+              <div className={styles.offlineParent}>
+                <div className={styles.addReader}>READY</div>
+                <DotLottiePlayer
+                  className={styles.frameChild}
+                  autoplay
+                  src="/frame_2393.json"
+                  loop
+                />
               </div>
             </div>
           </div>

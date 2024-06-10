@@ -6,7 +6,8 @@ const LoginUIDPWD = () => {
   const navigate = useNavigate();
 
   const onNextButtonClick = useCallback(() => {
-    navigate("/frame-1");
+    // navigate("/frame-1");
+    navigate("/home-device-5-connected-ready");
   }, [navigate]);
 
   return (

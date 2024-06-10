@@ -180,11 +180,11 @@ const HomeDevice5ConnectedReady = () => {
           >
             <div className={styles.readerOffline}>
               <div className={styles.readerStatusImageAndId}>
-                <div className={styles.readerStatusDisplay}>
+              <div className={styles.readerStatusDisplay}>
                   <img
-                    className={styles.testRunningImage}
+                    className={styles.readerClosedImage}
                     alt=""
-                    src="/test-running-image@2x.png"
+                    src="/reader-closed-image@2x.png"
                   />
                 </div>
                 <div className={styles.div}>3</div>
@@ -229,11 +229,11 @@ const HomeDevice5ConnectedReady = () => {
           >
             <div className={styles.readerOffline}>
               <div className={styles.readerStatusImageAndId}>
-                <div className={styles.readerStatusDisplay}>
+              <div className={styles.readerStatusDisplay}>
                   <img
-                    className={styles.testErrorImage}
+                    className={styles.readerClosedImage}
                     alt=""
-                    src="/test-error-image@2x.png"
+                    src="/reader-closed-image@2x.png"
                   />
                 </div>
                 <div className={styles.div}>4</div>
@@ -278,11 +278,11 @@ const HomeDevice5ConnectedReady = () => {
           >
             <div className={styles.readerOffline}>
               <div className={styles.readerStatusImageAndId}>
-                <div className={styles.readerStatusDisplay}>
+              <div className={styles.readerStatusDisplay}>
                   <img
-                    className={styles.testErrorImage}
+                    className={styles.readerClosedImage}
                     alt=""
-                    src="/test-resulst-image@2x.png"
+                    src="/reader-closed-image@2x.png"
                   />
                 </div>
                 <div className={styles.div}>5</div>

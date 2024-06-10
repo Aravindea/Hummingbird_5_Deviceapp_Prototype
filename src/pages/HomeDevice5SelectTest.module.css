@@ -79,23 +79,32 @@
   gap: var(--gap-7xl);
 }
 .frameWrapper {
-  flex: 1;
+  /* flex: 1; */
+  flex: 0 0 calc(50% - 20px);
   border-radius: var(--br-9xs);
   border: 2px solid var(--color-orange);
   box-sizing: border-box;
   overflow: hidden;
-  flex-direction: column;
+  /* flex-direction: row; */
   padding: var(--padding-3xs) var(--padding-8xs) var(--padding-3xs)
     var(--padding-mini);
   max-width: 177px;
+  max-width: calc(50% - 10px);
+  min-width: calc(50% - 10px);
+
 }
 .frameContainer {
+  /* width: 400px; */
   align-self: stretch;
+  /* display: flex;
+  flex-direction: row; */
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: center;
+  /* justify-content: center; */
   gap: var(--gap-3xs);
+  max-width: 375px;
+
 }
 .hbVariantTest {
   position: relative;
@@ -240,6 +249,11 @@
 .frameParent {
   align-self: stretch;
   gap: var(--gap-3xs);
+}
+.frameParent11{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .cancel {
   flex: 1;
